@@ -71,17 +71,9 @@ const Rickshaws = (props) => {
                                         </Card.Body>
                                     </Card>
 
-
-
-
-
                                 </Col>
                             </Row>
                         </Card>
-
-
-
-
 
                     </Col>
 
