@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import {NavItem} from "react-bootstrap";
 
 
 function App() {
@@ -25,7 +26,18 @@ function App() {
                       <Navbar.Collapse id="responsive-navbar-nav">
                           <Nav className="me-auto">
                               <Nav.Link href="/rickshaws">BTS rickshaws</Nav.Link>
+                              <Link to={"/"}>RCT home </Link>
                               <Link to={"/rickshaws"}>RCT rickshaws </Link>
+
+                              {/*<NavItem className="text-danger" eventKey={1} href="rickshaws">*/}
+                              {/*    NavItemThing*/}
+                              {/*</NavItem>*/}
+
+
+
+
+
+
 
                           </Nav>
                           <Nav>
