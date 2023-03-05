@@ -11,6 +11,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import {NavItem} from "react-bootstrap";
+import {LinkContainer} from 'react-router-bootstrap'
 
 
 function App() {
@@ -21,17 +22,21 @@ function App() {
               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                   <Container >
                       {/*<Container fluid>*/}
-                      <Navbar.Brand href="/">Rickshaw Worldly</Navbar.Brand>
+                      {/*<Navbar.Brand href="/">Rickshaw Worldly</Navbar.Brand>*/}
+
+                      <LinkContainer to="/">
+                          <Navbar.Brand >Rickshaw Worldly</Navbar.Brand>
+                      </LinkContainer>
+
                       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                       <Navbar.Collapse id="responsive-navbar-nav">
                           <Nav className="me-auto">
-                              <Nav.Link href="/rickshaws">BTS rickshaws</Nav.Link>
-                              <Link to={"/"}>RCT home </Link>
-                              <Link to={"/rickshaws"}>RCT rickshaws </Link>
+                              {/*<Nav.Link href="/rickshaws">BTS rickshaws</Nav.Link>*/}
+                              {/*<Link to={"/"}>RCT home </Link>*/}
 
-                              {/*<NavItem className="text-danger" eventKey={1} href="rickshaws">*/}
-                              {/*    NavItemThing*/}
-                              {/*</NavItem>*/}
+                              <LinkContainer to="/rickshaws">
+                                  <Nav.Link>Rickshaws</Nav.Link>
+                              </LinkContainer>
 
 
 
