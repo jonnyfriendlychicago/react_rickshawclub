@@ -17,7 +17,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 function App() {
   return (
       <>
-          <BrowserRouter>
+          <BrowserRouter basename="/">
               {/*<Header/>*/}
               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                   <Container >
