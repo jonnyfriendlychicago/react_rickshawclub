@@ -15,7 +15,7 @@ app.use(
   cors(),
   express.json(),
   express.urlencoded({extended: true}),
-  express.static("./client/build"),
+  // express.static("./client/build"),
   router
 );
 
